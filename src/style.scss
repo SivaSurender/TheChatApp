@@ -110,6 +110,10 @@
     .user {
       display: flex;
       gap: 10px;
+
+      span {
+        margin-top: 3px;
+      }
     }
 
     img {
@@ -127,8 +131,44 @@
       border: none;
       cursor: pointer;
     }
-  }
 
+    .search {
+      border-bottom: 1px solid gray;
+
+      .search-form {
+        padding: 10px;
+        input {
+          background-color: transparent;
+          border: none;
+          color: white;
+          outline: none;
+
+          &::placeholder {
+            color: lightgray;
+          }
+        }
+      }
+    }
+
+    .user-chat {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #3c3b72;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
   .chat {
     flex: 2;
   }
