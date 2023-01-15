@@ -198,5 +198,73 @@
       gap: 10px;
       cursor: pointer;
     }
+    img {
+      height: 24px;
+      cursor: pointer;
+    }
+
+    .messages {
+      background-color: #ddddf7;
+      padding: 10px;
+      height: calc(100% - 160px);
+
+      .message {
+        display: flex;
+        gap: 20px;
+
+        .message-info {
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+
+        .message-content {
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .input {
+      height: 50px;
+      background-color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #2f2d52;
+        font-size: 18px;
+
+        &::placeholder {
+          color: lightgray;
+        }
+      }
+
+      .send {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          height: 24px;
+          cursor: pointer;
+        }
+
+        button {
+          border: none;
+          padding: 10px 15px;
+          color: white;
+          background-color: #8da4f1;
+        }
+      }
+    }
   }
 }
